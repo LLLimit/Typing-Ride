@@ -1,24 +1,61 @@
-# Typing-Ride · 逐字骑行
+<p align="center"><img src="public/favicon.svg" width="96" alt="Typing-Ride · 逐字骑行 图标"></p>
 
-用指尖点燃速度，让词语成为前进的动力。
+<h1 align="center">Typing-Ride · 逐字骑行</h1>
 
-**在线演示：[https://ride.darkduck.fun/](https://ride.darkduck.fun/)**
+<p align="center">用指尖点燃速度，让词语成为前进的动力。<br>中英文打字 · 三张地图 · 方块角色 · 动态天气</p>
 
-**Typing-Ride** 是一款中英文打字骑行游戏，使用 TypeScript、Three.js 和 Vite，在浏览器中运行。输入正确字符推动自行车前进，连续失误会让骑手失去平衡；达到一定打字速度后，角色站起来冲刺。
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Three.js-222222?style=flat-square&amp;logo=threedotjs&amp;logoColor=white" alt="Three.js">
+  <img src="https://img.shields.io/badge/Vite%207-646CFF?style=flat-square&amp;logo=vite&amp;logoColor=white" alt="Vite 7">
+  <img src="https://img.shields.io/badge/WebGL%202-990000?style=flat-square&amp;logo=webgl&amp;logoColor=white" alt="WebGL 2">
+  <br>
+  <img src="https://img.shields.io/badge/Web%20Audio-24563D?style=flat-square" alt="Web Audio">
+  <img src="https://img.shields.io/badge/Node.js%2022%2B-339933?style=flat-square&amp;logo=nodedotjs&amp;logoColor=white" alt="Node.js 22+">
+  <img src="https://img.shields.io/badge/Browser%20Game-2563EB?style=flat-square" alt="Browser Game">
+  <img src="https://img.shields.io/badge/Local%20Storage-525252?style=flat-square" alt="Local Storage">
+</p>
+
+<p align="center">
+  <a href="https://ride.darkduck.fun/">在线演示</a> ·
+  <a href="#快速开始">快速开始</a> ·
+  <a href="#操作说明">操作说明</a> ·
+  <a href="#游戏画面">游戏画面</a> ·
+  <a href="https://github.com/LLLimit/Typing-Ride/issues">反馈问题</a>
+</p>
+
+---
+
+Typing-Ride 使用 TypeScript、Three.js 和 Vite 在浏览器中运行。输入正确字符推动自行车前进，连续失误会让骑手失去平衡；达到一定打字速度后，角色站起来冲刺。
+
+## 技术栈
+
+| 层级 | 技术 |
+| --- | --- |
+| 游戏逻辑与输入 | TypeScript · 浏览器输入法事件 |
+| 场景渲染 | Three.js · WebGL 2 |
+| 音乐与听写 | Web Audio · SpeechSynthesis |
+| 开发与构建 | Vite 7 · pnpm · Node.js 22+ |
+| 记录保存 | localStorage · JSON 导出 |
+| 部署方式 | 静态网站服务器 |
+
+## 画面预览
 
 ![晴日街区主菜单](previews/32-lin-street-menu.png)
 
-## 游戏特色
+## 功能亮点
 
-- **中英文输入**：英文字符逐字判定；中文支持输入法组词，提交的汉字才参与判定。
-- **无尽漫游 / 词本挑战**：挑战骑行距离，或按章节完成目标词语。
-- **看词 / 听力打字**：直接输入目标，或通过浏览器语音朗读进行听写。
-- **速度驱动骑行**：即时打字速度影响行进速度。达到 40 WPM 后触发站姿冲刺、35% 加速和镜头反馈；中文阈值使用字 / 分。
-- **输入反馈**：键帽动画、粒子、连击、音效和失误晃动，出发前有 3、2、1、GO 倒计时。
-- **三张地图与动态天气**：晴日街区、海风来信、林间小路；支持日间、黄昏、夜晚及晴天、雨天、雪天。
-- **三位方块角色**：林小满、芒芒和布丁，在菜单里可切换预览。
-- **字库与成就**：内置 140 个中英文词条，支持自定义词本、易错词回顾、本地记录和 JSON 导出。
-- **原创合成音频**：使用 Web Audio 实时生成音乐、环境声和交互音效。
+| 玩法 | 说明 |
+| --- | --- |
+| ⌨️ 中英文打字 | 英文逐字判定，中文输入法提交汉字后判定 |
+| 🚲 两种模式 | 无尽漫游挑战距离，词本挑战按章节完成目标 |
+| 🔊 看词与听写 | 显示目标词，或通过浏览器语音朗读进行听力打字 |
+| ⚡ 速度与冲刺 | 打字速度驱动骑行，达到 40 WPM 后触发站姿冲刺和 35% 加速；中文使用字 / 分 |
+| ✨ 输入反馈 | 键帽动画、粒子、连击、音效、失误晃动与出发倒计时 |
+| 🌦️ 三张地图 | 晴日街区、海风来信、林间小路，搭配昼夜和晴雨雪天气 |
+| 🧑‍🤝‍🧑 三位角色 | 林小满、芒芒和布丁，可在菜单中切换预览 |
+| 📖 词本与记录 | 140 个中英文词条、自定义词本、易错词回顾、本地记录与 JSON 导出 |
+| 🎵 原创音频 | Web Audio 实时生成音乐、环境声和交互音效 |
 
 ## 游戏画面
 
@@ -83,7 +120,8 @@ summer | 夏天
 
 每本最多 1,000 条，每条最多 48 字符，最多保存 20 本。
 
-## 开发与验证
+<details>
+<summary><strong>开发与验证命令</strong></summary>
 
 ```sh
 pnpm test           # 规则、模型、动画约束和存档测试
@@ -104,7 +142,9 @@ node scripts/visual-qa.mjs  # 布局与性能采样
 
 `scripts/art-preview.html` 是实际模型预览工具，需要 Vite 开发服务器。`node scripts/art-qa.mjs` 生成模型截图和角色头像，`node scripts/sculpt-qa.mjs` 检查多姿势渲染一致性。
 
-### 项目结构
+</details>
+
+## 项目结构
 
 | 路径 | 内容 |
 | --- | --- |
@@ -136,3 +176,7 @@ node scripts/visual-qa.mjs  # 布局与性能采样
 场景、角色、车辆和音乐由项目代码生成。字体 **Outfit** 与 **Barlow Condensed** 使用 SIL Open Font License，许可证见 [`OFL-Outfit.txt`](public/fonts/OFL-Outfit.txt) 和 [`BarlowCondensed-OFL.txt`](public/fonts/BarlowCondensed-OFL.txt)。
 
 界面设计参考用户提供的截图与《女神异闻录 3 Reload》的视觉方向，未使用该作品的图片、模型或音乐。
+
+## 反馈
+
+欢迎通过 [Issues](https://github.com/LLLimit/Typing-Ride/issues) 反馈问题，或提交 Pull Request。
