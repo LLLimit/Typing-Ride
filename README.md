@@ -2,6 +2,8 @@
 
 用指尖点燃速度，让词语成为前进的动力。
 
+**在线演示：[https://ride.darkduck.fun/](https://ride.darkduck.fun/)**
+
 **Typing-Ride** 是一款中英文打字骑行游戏，使用 TypeScript、Three.js 和 Vite，在浏览器中运行。输入正确字符推动自行车前进，连续失误会让骑手失去平衡；达到一定打字速度后，角色站起来冲刺。
 
 ![晴日街区主菜单](previews/32-lin-street-menu.png)
